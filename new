@@ -1,0 +1,75 @@
+Create a full-stack CRUD application using Python (Flask) for the backend, Supabase as the database, and HTML/CSS/JavaScript for the frontend. The project must run inside a Python virtual environment (venv).
+
+Requirements:
+
+1. Virtual Environment Setup:
+
+* Provide commands to create a virtual environment (venv)
+* Provide commands to activate it (Windows and Mac/Linux)
+* Install dependencies: flask, supabase
+* Include a requirements.txt file
+
+2. Project Structure:
+
+* Keep backend in a single file named app.py
+* Include a templates folder with index.html
+* Include a static folder with style.css and script.js
+* Code should be clean, simple, and well-commented
+
+3. Supabase Integration:
+
+* Use the official supabase-py client
+* Use environment variables:
+
+  * SUPABASE_URL
+  * SUPABASE_KEY
+* Load them using os.getenv
+
+4. Database:
+
+* Assume a Supabase table named "users" exists with:
+
+  * id (primary key or UUID)
+  * name (text)
+  * email (text, unique)
+
+5. Backend (Flask CRUD Routes):
+
+* POST /users → Create user
+* GET /users → Get all users
+* GET /users/<id> → Get single user
+* PUT /users/<id> → Update user
+* DELETE /users/<id> → Delete user
+* Serve index.html at "/"
+
+6. Frontend:
+   Create a simple UI using HTML, CSS, and JavaScript that:
+
+* Displays all users in a table
+* Has a form to add a new user (name, email)
+* Allows updating a user
+* Allows deleting a user
+
+7. Frontend Behavior:
+
+* Use fetch API to call Flask backend endpoints
+* Dynamically update UI without page reload
+* Show basic success/error messages
+
+8. Output Format:
+
+* Step 1: venv setup commands
+* Step 2: requirements.txt content
+* Step 3: full app.py code
+* Step 4: index.html code
+* Step 5: style.css code
+* Step 6: script.js code
+* Step 7: command to run Flask app
+
+Goal:
+
+* The full-stack app should run locally
+* Backend (Flask) connects to Supabase
+* Frontend interacts with backend via fetch API
+* The result should work after copy-paste with minimal setup
+* Keep it beginner-friendly but structured properly
